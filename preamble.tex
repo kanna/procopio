@@ -1,0 +1,122 @@
+\usepackage[font=footnotesize]{caption}
+\usepackage{float}
+\usepackage{epsf}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{latexsym}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{topcapt}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{mdwlist}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{algorithmic}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage[bottom]{footmisc}
+\usepackage{afterpage}
+\usepackage{eurosym}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{microtype}
+
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{algorithmic}
+\usepackage[hmargin=1in,vmargin=1.3in]{geometry}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage[ruled,noline,linesnumbered]{algorithm2e}
+\usepackage{afterpage}
+
+
+\widowpenalty=1000
+\clubpenalty=1000
+
+\input{epsf}
+
+\def\nas{{NASA\ }}
+\def\nase{{NASA}}
+\def\inst{{NASA Ames Research Center\ }}
+\def\inste{{NASA Ames Research Center}}
+\def\univ{{UPorto\ }}
+\def\unive{{UPorto}}
+\def\univn{{NTNU\ }}
+\def\univne{{NTNU}}
+\def\vig{{UVigo\ }}
+\def\vige{{UVigo}}
+\def\ldeo{{LDEO\ }}
+\def\ldeoe{{LDEO}}
+\def\rax{{\texttt{RAX\ }}}
+\def\raxe{{\texttt{RAX}}}
+\def\rx{{\texttt{T-REX\ }}}
+\def\rxe{{\texttt{T-REX}}}
+\def\ls{{LSTS\ }}
+\def\lse{{LSTS}}
+\def\sml{{SmallSat\ }}
+\def\smle{{SmallSat}}
+\def\mba{{MBARI\ }}
+\def\mbae{{MBARI}}
+\def\mer{{\texttt{MER\ }}}
+\def\mere{{\texttt{MER}}}
+\def\rpe{{REP}}
+\def\rp{{REP\ }}
+\def\pro{{\textmd{PROCOPIO\ }}}
+\def\proe{{\textmd{PROCOPIO}}}
+
+\newlength{\doublespacelength}
+\setlength{\doublespacelength}{\baselineskip}
+\addtolength{\doublespacelength}{0.5\baselineskip}
+\newcommand{\doublespace}{\setlength{\baselineskip}{\doublespacelength}}
+
+\newlength{\singlespacelength}
+\setlength{\singlespacelength}{\baselineskip}
+\newcommand{\singlespace}{\setlength{\baselineskip}{\singlespacelength}}
+
+
+\newlength{\savedspacing}
+\newcommand{\savespacing}{\setlength{\savedspacing}{\baselineskip}}
+\newcommand{\restorespacing}{\setlength{\baselineskip}{\savedspacing}}
+
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+
+\newcommand{\kc}[1]{{\color{red}{#1}}}
+\newcounter{quotenumber}
+
+\newenvironment{numquote}{%
+    \begin{enumerate}%
+     \setcounter{enumi}{\value{quotenumber}}%
+     \color{darkgray}
+    \item \begin{quote}%
+}{%
+    \end{quote}%
+    \setcounter{quotenumber}{\value{enumi}}
+    \end{enumerate}%
+}%
+
+\makeatletter
+\def\myitem{%
+   \@ifnextchar[ \@myitem{\@noitemargtrue\@myitem[\@itemlabel]}}
+\def\@myitem[#1]{\item[#1]\mbox{}}
+\makeatother
+
+
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\setcounter{secnumdepth}{0} 
+

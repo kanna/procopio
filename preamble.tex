@@ -3,8 +3,12 @@
 \usepackage{epsf}
 \usepackage{epsfig}
 \usepackage{subfigure}
+% \usepackage{subfig}
 \usepackage{latexsym}
-\usepackage{color}
+%\usepackage{algorithm}
+%\usepackage[noend]{algorithmic}
+% \usepackage{color}
+\usepackage{color, colortbl}
 \usepackage{wrapfig}
 \usepackage{topcapt}
 \usepackage{multirow}
@@ -12,27 +16,30 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{mdwlist}
-\usepackage{amsmath, amsfonts, amssymb}
-\usepackage{algorithmic}
-\usepackage{fancyhdr}
-\usepackage{url}
-\usepackage{multirow}
-\usepackage[bottom]{footmisc}
-\usepackage{afterpage}
-\usepackage{eurosym}
-\usepackage{enumitem}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage{microtype}
+\usepackage{pdfpages} 
+
+%\usepackage{color}
+\newcommand{\lc}[1]{\textcolor{blue}{#1}}
+
 
 \usepackage{amsmath, amsfonts, amssymb}
-\usepackage{algorithmic}
-\usepackage[hmargin=1in,vmargin=1.3in]{geometry}
+\usepackage[hmargin=1in,vmargin=1.2in]{geometry}
 \usepackage{url}
 \usepackage{multirow}
 \usepackage[ruled,noline,linesnumbered]{algorithm2e}
+\usepackage[bottom]{footmisc}
 \usepackage{afterpage}
-
+%\usepackage[caption=false]{caption}
+\usepackage{eurosym}
+\usepackage{enumitem}
+% \usepackage{soul}
+\usepackage{fancyhdr}
+\usepackage{dashrule}
+% \usepackage[stable]{footmisc}
+% \usepackage{placeins}
+% \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+% \usepackage[utf8]{inputenc}
+\usepackage{gensymb}
 
 \widowpenalty=1000
 \clubpenalty=1000
@@ -61,6 +68,8 @@
 \def\mbae{{MBARI}}
 \def\rpe{{REP}}
 \def\rp{{REP\ }}
+\def\org{{SIFT\ }}
+\def\orge{{SIFT}}
 \def\pro{{\textmd{PROCOPIO\ }}}
 \def\proe{{\textmd{PROCOPIO}}}
 
@@ -105,7 +114,7 @@
    \@ifnextchar[ \@myitem{\@noitemargtrue\@myitem[\@itemlabel]}}
 \def\@myitem[#1]{\item[#1]\mbox{}}
 \makeatother
-
+\definecolor{Gray}{gray}{0.6}
 
 
 \newcommand\blankpage{%

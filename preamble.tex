@@ -72,9 +72,19 @@
 \def\orge{{SIFT}}
 \def\pro{{\textmd{METEOR\ }}}
 \def\proe{{\textmd{METEOR}}}
+
+\newif\ifkeck
+% *************************************************
+% This is the key variable to turn on/off the logic to compile between
+% different Keck/non-Keck options
+
+\kecktrue 
+
+% *************************************************
+\ifkeck
 \def\kck{{Keck Foundation\ }}
 \def\kcke{{Keck Foundation}}
-
+\fi
 
 \newlength{\doublespacelength}
 \setlength{\doublespacelength}{\baselineskip}

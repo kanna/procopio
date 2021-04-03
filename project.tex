@@ -102,28 +102,35 @@ endangered coastal waters (Fig. \ref{fig:mega-cities}).
 % information to deal with coastal pollution, erosion, toxic waters and
 % sediment laden plumes.
 
-\subsection{The Idea}
-
-
-% \begin{wrapfigure}{r}{3.8in} %{2.1in - .75\columnsep}
-%   % \vspace{-\intextsep}
-%     \hspace*{-.35\columnsep}
-% \end{wrapfigure}
+\subsection{The Big Idea}
 
 \pro (Movable ocEan roboTic obsErvatORy) is conceived as a modular
 system with bespoke approaches related to water quality in the world’s
-coastal zones.  The system constitutes both a vertical integration of
-state-of-the-art hardware including a small satellite (\smle)
-constellation, as well as in-situ air, surface and underwater
-vehicles, with innovative software to control and visualize the
-information gathered, as well as horizontal integration across
-disciplines of computer science, marine robotics, engineering, ocean
-modeling and oceanography. The frequent revisit times over a region
-that only a constellation of \smle s can provide, coupled with the
-latest smart and adaptive AI techniques, will enable robots to deliver
-systematic and opportune observations of parameters relevant to
-coastal water quality and ocean processes in near real-time
+coastal zones.  The observational system constitutes both a vertical
+integration of state-of-the-art hardware including a small satellite
+(\smle) constellation, as well as in-situ air, surface and underwater
+vehicles, with innovative software and assimilating ocean models to
+visualize the information gathered and predict the near term future,
+as well as horizontal integration across disciplines of computer
+science, marine robotics, engineering, ocean modeling and
+oceanography. The frequent revisit times over a region that only a
+constellation of \smle s can provide, coupled with the latest smart
+and adaptive AI techniques, will enable robots to deliver systematic
+and opportune observations of parameters relevant to coastal water
+quality and ocean processes in near real-time
 (Fig. \ref{fig:mega-cities}).
+
+\kc{Wait for Pierre's contribution -- something here about the
+  uniqueness of HOPS and potentially how it will interact with the
+  observations.  That connection needs to be made clear for Keck.}
+Shore-based machine intelligence will allow for statistical data
+analysis from apriori data to capture expected seasonal variations for
+the targeted environment to aid and augment model predictions. Onboard
+AI-driven adaptation will ensure that in-situ robotic vehicles will
+intelligently adapt to the dynamics of the environment to make fine
+scale observations of targeted coastal ocean phenomenon in the upper
+water-column as a means to provide information in high-resolution to
+the models onshore. 
 
 % \pro (A Portable Robotic Observatory for Coordinated Oceanographic
 % Observations) will be a modular system with bespoke approaches related
@@ -189,6 +196,26 @@ coastal water quality and ocean processes in near real-time
 % and stewardship, and the management of our Urban Seas.
 % \vspace*{-0.2cm}
 
+\ifkeck
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.1]{fig/mega-cities-toxic-1.jpg}
+  \caption{Coastal zones are impacted by human-induced activities
+    leading to oxygen depleted hypoxic zones, toxic algal blooms,
+    pollution, and coastal erosion. \pro will use an ensemble of small
+    satellites, aerial, surface and underwater vehicles along with
+    predictive shore-side ocean models, to observe the coastal ocean
+    over sustained periods of time to provide real-time warning and
+    situational awareness of impactful changes to human health,
+    species diversity and ecosystem services. Note: UAV=Unmanned
+    Aerial Vehicle; ASV=Autonomous Surface Vehicle; AUV=Autonomous
+    Underwater Vehicle; CODAR=Coastal high-frequency radar.}
+    \label{fig:mega-cities}
+\end{figure}
+
+\else 
+
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.122]{fig/mega-cities-toxic-1.jpg}
@@ -204,6 +231,13 @@ coastal water quality and ocean processes in near real-time
     Underwater Vehicle; CODAR=Coastal high-frequency radar.}
     \label{fig:mega-cities}
 \end{figure}
+
+\fi
+
+\ifkeck
+\input{keck}
+\fi
+
 
 \subsection{Why now?}
 
@@ -295,13 +329,17 @@ magnitude; the temporal scales of coastal observations will change
 from weeks or days to hours and minutes with the provision of near
 real-time information. Current remote sensing observations are
 available at best once a day, while with a \sml constellation we can
-provide better quality data every 3 hours. Techniques in AI will adapt
-the information for dissemination depending on the kind of user, from
-well-informed scientists or government officials to the lay person
-curious about how beach conditions might impact their leisure. The
-information will also be delivered via an app on a smartphone or
-tablet and will be freely available for registered
-users. % \color{blue} Advanced modeling
+provide better quality data every 3 hours.  It should be noted that
+the \sml constellation has the capacity to provide coverage anywhere
+in the world and hence can be leveraged for other projects such as
+monitoring global water quality in lakes and reservoirs as well as
+provide rapid response capability to events in other water bodies at
+any time. Techniques in AI will adapt the information for
+dissemination depending on the kind of user, from well-informed
+scientists or government officials to the lay person curious about how
+beach conditions might impact their leisure. The information will also
+be delivered via an app on a smartphone or tablet and will be freely
+available for registered users. % \color{blue} Advanced modeling
 % predictions and analyses will be fully integrated with observations
 % and learning, including real-time planning and autonomous adaptation
 % to dynamical events and societal needs. \color{black}
@@ -388,9 +426,11 @@ on ocean sustainability and stewardship.
 % techniques that are non-existent in other interventions.
 
 \input{milestones-new}
-\input{keck}
 
+\ifkeck
+\else
 \newpage
+\fi
 \subsection{Governance and Execution}
 
 
@@ -401,8 +441,15 @@ scientific advisory board consisting of technologists, ocean-going
 scientists, ecologists and policymakers from the US, Europe and
 targeted coastal states.
 
-The project itself will be based in Porto, Portugal, with support from
-all team partners, for a number of important reasons including the
+\ifkeck
+
+The project will be based on the US east coast with easy access to
+Porto, with support from all team partners.
+
+\else
+
+The project will be based in Porto, Portugal, with support from all
+team partners, for a number of important reasons including the
 existence of marine robotic development and testing infrastructure, a
 skilled tech-savvy work force, university support and overall
 cost-effectiveness.  % \color{blue} Of course, the team will also
@@ -410,7 +457,7 @@ cost-effectiveness.  % \color{blue} Of course, the team will also
 % demonstrate portability and rapid responses to regional events,
 % additional centers will be created in Spain and east and west coasts
 % of the US.  \color{black}
-
+\fi
 
 \subsection{The Team}
 
